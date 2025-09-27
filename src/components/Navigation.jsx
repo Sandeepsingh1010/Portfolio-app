@@ -19,9 +19,12 @@ const Navigation = () => {
       <div className="nav-container">
         <Link to="/" className="nav-logo" onClick={closeMenu}>
           <div className="logo">
-            <span className="logo-text">SS</span>
+            <img src="/Branding/ICON_SS1010.svg" alt="SS Logo" className="logo-icon" />
           </div>
-          <span className="logo-name">Sandeep Singh</span>
+          <div className="brand-text">
+            <span className="brand-name">SS1010</span>
+            <span className="brand-slogan">Sandeep S.</span>
+          </div>
         </Link>
         
         <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
