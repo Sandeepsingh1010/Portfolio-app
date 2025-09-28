@@ -194,11 +194,36 @@ const Contact = () => {
         
         <div className="booking-section">
           <h2>Book a Meeting</h2>
-          <iframe
-            src="https://outlook.office.com/bookwithme/user/5ed4478e66cc415a8347edb0b5e749d6@my.centennialcollege.ca/meetingtype/1ghicY7W90-uIdXq7SyIKg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
-            style={{ width: "100%", height: "700px", border: "none" }}
-            title="Microsoft Bookings"
-          />
+          <div className="booking-content">
+            <p>Ready to discuss your project or explore collaboration opportunities? Schedule a direct consultation with me using Microsoft Bookings.</p>
+            <div className="booking-features">
+              <div className="booking-feature">
+                <span className="feature-icon">📅</span>
+                <span>Choose convenient time slots</span>
+              </div>
+              <div className="booking-feature">
+                <span className="feature-icon">💻</span>
+                <span>Virtual or in-person meetings</span>
+              </div>
+              <div className="booking-feature">
+                <span className="feature-icon">⚡</span>
+                <span>Instant confirmation</span>
+              </div>
+            </div>
+            <a 
+              href="https://outlook.office.com/bookwithme/user/5ed4478e66cc415a8347edb0b5e749d6@my.centennialcollege.ca/meetingtype/1ghicY7W90-uIdXq7SyIKg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="booking-link"
+            >
+              <button className="booking-button">
+                📅 Book a Meeting Now
+              </button>
+            </a>
+            <p className="booking-note">
+              <em>Opens in a new window via Microsoft Bookings</em>
+            </p>
+          </div>
         </div>
       </div>
     </div>
