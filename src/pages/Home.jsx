@@ -30,7 +30,7 @@ const Home = () => {
             <Link to="/projects" className="cta-button secondary">
               View My Projects
             </Link>
-              <Link to="/Connect" className="cta-button secondary">
+              <Link to="/contact" className="cta-button secondary">
               Connect with Me
             </Link>
           </div>
