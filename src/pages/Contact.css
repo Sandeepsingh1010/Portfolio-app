@@ -30,7 +30,7 @@
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1.8fr 1.0fr;
   gap: 40px;
   align-items: start;
 }
@@ -249,9 +249,8 @@
   }
   
   .contact-method {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
+    align-items: center;
+    text-align: left;
     padding: 15px 0;
   }
   

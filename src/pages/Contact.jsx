@@ -57,64 +57,7 @@ const Contact = () => {
         </div>
         
         <div className="contact-content">
-          <div className="contact-info-panel">
-            <h2>Get In Touch</h2>
-            
-            <div className="contact-method">
-              <div className="contact-icon">
-                <img src="https://www.svgrepo.com/show/387989/mail.svg" alt="LinkedIn" />
-              </div>
-              <div className="contact-details">
-                <h4>Email</h4>
-                <a href="mailto:ssin1949@my.centennialcollege.ca">ssin1949@my.centennialcollege.ca</a>
-              </div>
-            </div>
-            
-            <div className="contact-method">
-              <div className="contact-icon">
-                <img src="https://www.svgrepo.com/show/336068/phone-call.svg" alt="LinkedIn" />
-              </div>
-              <div className="contact-details">
-                <h4>Phone</h4>
-                <a href="tel:+14377792324">(437) 779-2324</a>
-              </div>
-            </div>
-            
-            <div className="contact-method">
-              <div className="contact-icon">
-                <img src="https://www.svgrepo.com/show/408372/location-pin-map.svg" alt="LinkedIn" />
-              </div>
-              <div className="contact-details">
-                <h4>Location</h4>
-                <span>Toronto, ON, Canada</span>
-              </div>
-            </div>
-            
-            <div className="contact-method">
-              <div className="contact-icon">
-                <img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" />
-              </div>
-              <div className="contact-details">
-                <h4>LinkedIn</h4>
-                <a href="https://www.linkedin.com/in/sandeep-singh-1010" target="_blank" rel="noopener noreferrer">
-                  linkedin.com/in/sandeep-singh-1010
-                </a>
-              </div>
-            </div>
-            
-            <div className="contact-method">
-              <div className="contact-icon">
-                <img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="LinkedIn" />
-              </div>
-              <div className="contact-details">
-                <h4>GitHub</h4>
-                <a href="https://github.com/Sandeepsingh1010" target="_blank" rel="noopener noreferrer">
-                  github.com/Sandeepsingh1010
-                </a>
-              </div>
-            </div>
-          </div>
-          
+
           <div className="contact-form-section">
             <h2>Send Me a Message</h2>
             <form onSubmit={handleSubmit} className="contact-form">
@@ -187,6 +130,66 @@ const Contact = () => {
               </button>
             </form>
           </div>
+
+          <div className="contact-info-panel">
+            <h2>Get In Touch</h2>
+            
+            <div className="contact-method">
+              <div className="contact-icon">
+                <img src="https://www.svgrepo.com/show/387989/mail.svg" alt="LinkedIn" />
+              </div>
+              <div className="contact-details">
+                <h4>Email</h4>
+                <a href="mailto:ssin1949@my.centennialcollege.ca">ssin1949@my.centennialcollege.ca</a>
+              </div>
+            </div>
+            
+            <div className="contact-method">
+              <div className="contact-icon">
+                <img src="https://www.svgrepo.com/show/336068/phone-call.svg" alt="LinkedIn" />
+              </div>
+              <div className="contact-details">
+                <h4>Phone</h4>
+                <a href="tel:+14377792324">(437) 779-2324</a>
+              </div>
+            </div>
+            
+            <div className="contact-method">
+              <div className="contact-icon">
+                <img src="https://www.svgrepo.com/show/408372/location-pin-map.svg" alt="LinkedIn" />
+              </div>
+              <div className="contact-details">
+                <h4>Location</h4>
+                <span>Toronto, ON, Canada</span>
+              </div>
+            </div>
+            
+            <div className="contact-method">
+              <div className="contact-icon">
+                <img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" />
+              </div>
+              <div className="contact-details">
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/sandeep-singh-1010" target="_blank" rel="noopener noreferrer">
+                  linkedin.com/in/sandeep-singh-1010
+                </a>
+              </div>
+            </div>
+            
+            <div className="contact-method">
+              <div className="contact-icon">
+                <img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="LinkedIn" />
+              </div>
+              <div className="contact-details">
+                <h4>GitHub</h4>
+                <a href="https://github.com/Sandeepsingh1010" target="_blank" rel="noopener noreferrer">
+                  github.com/Sandeepsingh1010
+                </a>
+              </div>
+            </div>
+          </div>
+          
+
         </div>
         
         <div className="booking-section">
