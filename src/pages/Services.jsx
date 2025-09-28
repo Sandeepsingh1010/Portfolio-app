@@ -4,18 +4,6 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: "CAD/CAM Engineering",
-      icon: "⚙️",
-      description: "Expert-level CAD/CAM services using Siemens NX, including template development, engineering standards library management, and 3D modeling.",
-      features: [
-        "Siemens NX Design & Development",
-        "PLM Implementation & Management",
-        "Engineering Standards Development",
-        "3D Modeling & Simulation"
-      ]
-    },
-    {
-      id: 2,
       title: "Software Development & Automation",
       icon: "💻",
       description: "Custom software solutions and automation development using modern technologies and programming languages.",
@@ -27,19 +15,7 @@ const Services = () => {
       ]
     },
     {
-      id: 3,
-      title: "Manufacturing Process Optimization",
-      icon: "📊",
-      description: "Comprehensive manufacturing process analysis and optimization using Lean, Six Sigma, and modern quality control methodologies.",
-      features: [
-        "Lean & Six Sigma Implementation",
-        "G-code Programming & Optimization",
-        "Quality Control Systems",
-        "OEE Improvement Strategies"
-      ]
-    },
-    {
-      id: 4,
+      id: 2,
       title: "Digital Transformation Consulting",
       icon: "🚀",
       description: "Guide organizations through digital transformation initiatives, ERP implementations, and Industry 4.0 adoption.",
@@ -51,7 +27,7 @@ const Services = () => {
       ]
     },
     {
-      id: 5,
+      id: 3,
       title: "Web Development",
       icon: "🌐",
       description: "Modern web applications using React, JavaScript, and responsive design principles for business solutions.",
@@ -62,6 +38,33 @@ const Services = () => {
         "Cloud-based Applications"
       ]
     },
+    {
+      id: 4,
+      title: "CAD/CAM Engineering",
+      icon: "⚙️",
+      description: "Expert-level CAD/CAM services using Siemens NX, including template development, engineering standards library management, and 3D modeling.",
+      features: [
+        "Siemens NX Design & Development",
+        "PLM Implementation & Management",
+        "Engineering Standards Development",
+        "3D Modeling & Simulation"
+      ]
+    },
+
+    {
+      id: 5,
+      title: "Manufacturing Process Optimization",
+      icon: "📊",
+      description: "Comprehensive manufacturing process analysis and optimization using Lean, Six Sigma, and modern quality control methodologies.",
+      features: [
+        "Lean & Six Sigma Implementation",
+        "G-code Programming & Optimization",
+        "Quality Control Systems",
+        "OEE Improvement Strategies"
+      ]
+    },
+
+
     {
       id: 6,
       title: "Technical Training & Mentoring",
