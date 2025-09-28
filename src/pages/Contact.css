@@ -354,8 +354,8 @@
 }
 
 @media (max-width: 480px) {
-  .contact-info-panel,
-  .contact-form-section,
+  
+
   .booking-section {
     padding: 25px 20px;
   }
@@ -372,4 +372,12 @@
   .submit-button {
     padding: 15px 30px;
   }
+
+
+  .contact-form-section
+  .contact-info-panel {
+  padding: 25px 20px;
+  width: 100%;
+}
+
 }
