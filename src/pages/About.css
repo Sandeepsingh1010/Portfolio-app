@@ -350,7 +350,6 @@
     gap: 20px;
   }
   
-  .about-description,
   .contact-info,
   .resume-section,
   .certifications,
@@ -358,6 +357,13 @@
     padding: 25px 20px;
   }
   
+.about-description p {
+  font-size: 1.0rem;
+  line-height: 1.5;
+  
+}
+
+
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 15px;
