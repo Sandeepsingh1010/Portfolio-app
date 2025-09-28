@@ -68,6 +68,12 @@
   flex-shrink: 0;
 }
 
+.contact-icon img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
 .contact-details h4 {
   color: #2c3e50;
   margin-bottom: 5px;
@@ -189,6 +195,22 @@
   transform: translateY(0);
 }
 
+.booking-section {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  animation: fadeInUp 0.8s ease 0.6s both;
+}
+
+.booking-section h2 {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
 /* Animations */
 @keyframes fadeInUp {
   from {
@@ -221,7 +243,8 @@
   }
   
   .contact-info-panel,
-  .contact-form-section {
+  .contact-form-section,
+  .booking-section {
     padding: 30px 25px;
   }
   
@@ -254,7 +277,8 @@
 
 @media (max-width: 480px) {
   .contact-info-panel,
-  .contact-form-section {
+  .contact-form-section,
+  .booking-section {
     padding: 25px 20px;
   }
   

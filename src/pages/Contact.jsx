@@ -61,15 +61,19 @@ const Contact = () => {
             <h2>Get In Touch</h2>
             
             <div className="contact-method">
-              <div className="contact-icon">📧</div>
+              <div className="contact-icon">
+                <img src="https://www.svgrepo.com/show/387989/mail.svg" alt="LinkedIn" />
+              </div>
               <div className="contact-details">
                 <h4>Email</h4>
-                <a href="mailto:Sandeep.singh1010@gmail.com">Sandeep.singh1010@gmail.com</a>
+                <a href="mailto:ssin1949@my.centennialcollege.ca">ssin1949@my.centennialcollege.ca</a>
               </div>
             </div>
             
             <div className="contact-method">
-              <div className="contact-icon">📱</div>
+              <div className="contact-icon">
+                <img src="https://www.svgrepo.com/show/336068/phone-call.svg" alt="LinkedIn" />
+              </div>
               <div className="contact-details">
                 <h4>Phone</h4>
                 <a href="tel:+14377792324">(437) 779-2324</a>
@@ -77,15 +81,19 @@ const Contact = () => {
             </div>
             
             <div className="contact-method">
-              <div className="contact-icon">📍</div>
+              <div className="contact-icon">
+                <img src="https://www.svgrepo.com/show/408372/location-pin-map.svg" alt="LinkedIn" />
+              </div>
               <div className="contact-details">
                 <h4>Location</h4>
-                <span>Brampton, ON, Canada</span>
+                <span>Toronto, ON, Canada</span>
               </div>
             </div>
             
             <div className="contact-method">
-              <div className="contact-icon">💼</div>
+              <div className="contact-icon">
+                <img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" />
+              </div>
               <div className="contact-details">
                 <h4>LinkedIn</h4>
                 <a href="https://www.linkedin.com/in/sandeep-singh-1010" target="_blank" rel="noopener noreferrer">
@@ -95,18 +103,15 @@ const Contact = () => {
             </div>
             
             <div className="contact-method">
-              <div className="contact-icon">💻</div>
+              <div className="contact-icon">
+                <img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="LinkedIn" />
+              </div>
               <div className="contact-details">
                 <h4>GitHub</h4>
                 <a href="https://github.com/Sandeepsingh1010" target="_blank" rel="noopener noreferrer">
                   github.com/Sandeepsingh1010
                 </a>
               </div>
-            </div>
-            
-            <div className="availability">
-              <h3>Availability</h3>
-              <p>I'm currently open to new opportunities and collaborations. Whether you're looking for engineering expertise, software development services, or consulting on digital transformation projects, I'd be happy to discuss how I can help.</p>
             </div>
           </div>
           
@@ -182,6 +187,15 @@ const Contact = () => {
               </button>
             </form>
           </div>
+        </div>
+        
+        <div className="booking-section">
+          <h2>Book a Meeting</h2>
+          <iframe
+            src="https://outlook.office.com/bookwithme/user/5ed4478e66cc415a8347edb0b5e749d6@my.centennialcollege.ca/meetingtype/1ghicY7W90-uIdXq7SyIKg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
+            style={{ width: "100%", height: "700px", border: "none" }}
+            title="Microsoft Bookings"
+          />
         </div>
       </div>
     </div>
