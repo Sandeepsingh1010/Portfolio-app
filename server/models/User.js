@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
     default: Date.now
   }
 }, {
-  timestamps: false // We're using custom created/updated fields as per assignment
+  timestamps: false // We're using custom created/updated fields
 });
 
 // Update the 'updated' field before saving

@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files from React build - commented out for assignment
+// Serve static files from React build - commented out for now
 // app.use(express.static(path.join(__dirname, 'dist')));
 
 // Connect to database
@@ -29,7 +29,7 @@ connectDB();
 app.use('/api/contacts', contactRoutes);
 app.use('/api/users', userRoutes);
 
-// Welcome route - required for assignment (JSON format as per requirement)
+// Welcome route
 app.get('/', (req, res) => {
   res.json({
     message: "Welcome to My Portfolio application."
@@ -52,9 +52,7 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-  console.log(`📊 Database: MongoDB Atlas - Skeleton`);
-  console.log(`🔗 API Endpoints available at /api/contacts and /api/users`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
 
 module.exports = app;
