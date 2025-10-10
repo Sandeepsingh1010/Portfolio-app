@@ -1,11 +1,11 @@
 # Portfolio - Sandeep Singh (SS1010)
 
-A modern, responsive portfolio website showcasing my expertise in engineering, software development, and digital transformation. Built with React and Vite for optimal performance and user experience.
+A modern, full-stack portfolio application showcasing my expertise in engineering, software development, and digital transformation. Built with React frontend and Node.js/Express backend with MongoDB integration for optimal performance and scalability.
 
 ![Portfolio Preview](./Branding/dp2-01_small.jpg)
 
 ## 🚀 Live Demo
-[Visit Portfolio](https://sandeepsingh1010.github.io/Portfolio-app)
+[Visit Portfolio](https://ss1010.netlify.app/)
 
 ## 👨‍💻 About Me
 I'm Sandeep Singh, a passionate engineer and software developer specializing in:
@@ -17,13 +17,25 @@ I'm Sandeep Singh, a passionate engineer and software developer specializing in:
 
 ## 🛠️ Technologies & Skills
 
+### Frontend Technologies
+- React 18+, Vite, JavaScript (ES6+)
+- HTML5, CSS3, React Router
+- Responsive Design, CSS Grid/Flexbox
+
+### Backend Technologies  
+- Node.js, Express.js
+- MongoDB Atlas, Mongoose ODM
+- RESTful APIs, CRUD Operations
+- bcryptjs, CORS, dotenv
+
 ### Programming Languages
-- Java, C++, JavaScript, HTML5, CSS3
+- JavaScript, Java, C++, HTML5, CSS3
 - NX Open API Development
 - CNC G-code Programming
 
 ### Frameworks & Tools
-- React 18+, Vite, Node.js
+- React 18+, Vite, Node.js, Express.js
+- MongoDB, Mongoose, Postman
 - CATIA, Mastercam, Siemens NX
 - Microsoft Dynamics, Power BI
 - Arduino, FEA Analysis
@@ -66,6 +78,22 @@ I'm Sandeep Singh, a passionate engineer and software developer specializing in:
 - **React Router** - Client-side routing for SPA
 - **CSS3** - Custom styling with Flexbox/Grid layouts
 
+### Backend Stack (Assignment 2)
+- **Node.js** - JavaScript runtime environment
+- **Express.js** - Web application framework
+- **MongoDB Atlas** - Cloud-based NoSQL database
+- **Mongoose** - MongoDB object modeling for Node.js
+- **bcryptjs** - Password hashing library
+- **CORS** - Cross-Origin Resource Sharing middleware
+- **dotenv** - Environment variable management
+
+### API Architecture
+- **RESTful Design** - Clean, predictable API endpoints
+- **CRUD Operations** - Complete Create, Read, Update, Delete functionality
+- **Error Handling** - Comprehensive error responses
+- **Data Validation** - Schema validation with Mongoose
+- **Security** - Password hashing and data sanitization
+
 ### Features
 - ✅ Responsive design across all devices
 - ✅ Interactive project showcase with alternating layouts
@@ -73,14 +101,19 @@ I'm Sandeep Singh, a passionate engineer and software developer specializing in:
 - ✅ Microsoft Bookings integration
 - ✅ Performance optimized with Vite
 - ✅ SEO friendly structure
+- ✅ RESTful API backend with MongoDB
+- ✅ Complete CRUD operations for contacts and users
+- ✅ Secure password hashing
+- ✅ Environment-based configuration
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js (v16 or higher)
 - npm or yarn package manager
+- MongoDB Atlas account (for backend)
 
-### Installation
+### Frontend Setup
 
 1. **Clone the repository**
    ```bash
@@ -108,13 +141,43 @@ I'm Sandeep Singh, a passionate engineer and software developer specializing in:
    npm run preview
    ```
 
+### Backend Setup (Assignment 2)
+
+1. **Switch to backend branch**
+   ```bash
+   git checkout assignment-2-backend
+   ```
+
+2. **Install backend dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Configuration**
+   ```bash
+   # Create server/.env file with:
+   MONGODB_URI=mongodb+srv://username:****@cluster.mongodb.net/Skeleton
+   PORT=3000
+   NODE_ENV=development
+   ```
+
+4. **Start backend server**
+   ```bash
+   npm run server
+   ```
+
+5. **Access API endpoints**
+   - Welcome: `http://localhost:3000/`
+   - Contacts API: `http://localhost:3000/api/contacts`
+   - Users API: `http://localhost:3000/api/users`
+
 ## 📁 Project Structure
 ```
 Portfolio-app/
 ├── public/                 # Static assets
 │   ├── project-images/    # Project screenshots
 │   └── resume.pdf         # Resume document
-├── src/
+├── src/                   # Frontend React source
 │   ├── components/        # Reusable React components
 │   │   ├── Navigation.jsx # Site navigation
 │   │   └── Navigation.css
@@ -126,20 +189,114 @@ Portfolio-app/
 │   │   └── Contact.jsx    # Contact form & booking
 │   ├── assets/            # Images and media
 │   └── App.jsx           # Main application component
-├── Branding/              # Brand assets and logos
-├── Project_CNC_plotter/   # CNC project documentation
-├── Project_ERP/           # ERP project assets
-└── Project_NX_Open/       # NX Open project files
+├── server/                # Backend implementation (Assignment 2)
+│   ├── config/           
+│   │   └── database.js    # MongoDB connection
+│   ├── models/           
+│   │   ├── Contact.js     # Contact schema
+│   │   └── User.js        # User schema
+│   ├── controllers/      
+│   │   ├── contactController.js # Contact CRUD operations
+│   │   └── userController.js    # User CRUD operations
+│   ├── routes/           
+│   │   ├── contactRoutes.js     # Contact API routes
+│   │   └── userRoutes.js        # User API routes
+│   └── .env              # Environment variables
+├── server.js             # Main Express server
+├── dist/                 # Built React app for production
+├── Branding/             # Brand assets and logos
+├── Project_CNC_plotter/  # CNC project documentation
+├── Project_ERP/          # ERP project assets
+└── Project_NX_Open/      # NX Open project files
+```
+
+## 🔌 API Endpoints (Assignment 2)
+
+### Welcome Route
+- `GET /` - Returns welcome message in JSON format
+
+### Contacts API
+- `GET /api/contacts` - Get all contacts
+- `GET /api/contacts/:id` - Get contact by ID
+- `POST /api/contacts` - Create new contact
+- `PUT /api/contacts/:id` - Update contact by ID
+- `DELETE /api/contacts/:id` - Delete contact by ID
+- `DELETE /api/contacts` - Delete all contacts
+
+### Users API
+- `GET /api/users` - Get all users
+- `GET /api/users/:id` - Get user by ID
+- `POST /api/users` - Create new user
+- `PUT /api/users/:id` - Update user by ID
+- `DELETE /api/users/:id` - Delete user by ID
+- `DELETE /api/users` - Delete all users
+
+### Example Request Bodies
+
+**Create Contact:**
+```json
+{
+  "firstname": "John",
+  "lastname": "Doe", 
+  "email": "john.doe@example.com"
+}
+```
+
+**Create User:**
+```json
+{
+  "name": "Jane Smith",
+  "email": "jane.smith@example.com",
+  "password": "securepassword123"
+}
 ```
 
 ## 🔧 Development Scripts
 
+### Frontend Scripts
 ```bash
 npm run dev      # Start development server
 npm run build    # Build for production
 npm run preview  # Preview production build
 npm run lint     # Run ESLint
 ```
+
+### Backend Scripts (Assignment 2)
+```bash
+npm run server   # Start Express server with nodemon
+npm start       # Start production server
+```
+
+## 🗄️ Database Schema
+
+### Contact Model
+```javascript
+{
+  firstname: String (required, max: 50)
+  lastname: String (required, max: 50)
+  email: String (required, unique, validated)
+  createdAt: Date (auto-generated)
+  updatedAt: Date (auto-generated)
+}
+```
+
+### User Model
+```javascript
+{
+  name: String (required, max: 100)
+  email: String (required, unique, validated)
+  password: String (required, hashed, min: 6)
+  created: Date (default: now)
+  updated: Date (default: now)
+}
+```
+
+## 🔒 Security Features
+- **Password Hashing**: bcryptjs with salt rounds
+- **Data Validation**: Mongoose schema validation
+- **Email Validation**: Regex pattern validation
+- **Error Handling**: Comprehensive error responses
+- **Environment Variables**: Sensitive data protection
 
 ## 📱 Responsive Breakpoints
 - **Desktop**: 1200px+
@@ -158,6 +315,16 @@ npm run lint     # Run ESLint
 
 ### Book a Meeting
 Schedule a direct consultation through Microsoft Bookings integrated into the portfolio contact page.
+
+## 🌟 Project Branches
+- **`main`** - Production frontend portfolio
+- **`assignment-2-backend`** - Complete full-stack implementation with backend API
+
+## 🧪 Testing
+- **Frontend**: Manual testing across devices and browsers
+- **Backend**: API testing with Postman
+- **Database**: MongoDB Atlas with Mongoose validation
+- **Integration**: Full-stack testing with frontend and backend communication
 
 ## 🤝 Contributing
 While this is a personal portfolio, feedback and suggestions are welcome! Feel free to:
